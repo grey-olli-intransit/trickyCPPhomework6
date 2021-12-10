@@ -1,0 +1,234 @@
+----> 09:03:46 Fri Dec 10 olli@dell15 ~/CLionProjects/trickyCPP/homework6
+$ ./cmake-build-debug/homework6 
+Initially items in shared home:
+1 2 4 5 3 6 7 8 9 9 10 11 12 13 14 
+Each worker will end after 35 steps.
+thief: stealing value: 14
+thief: steps left: 34, steps passed: 1
+1 2 3 4 5 6 7 8 9 9 10 11 12 13 
+owner: added value: 7, steps left: 34, steps passed: 1
+								Seconds since start: 1
+thief: stealing value: 13
+thief: steps left: 33, steps passed: 2
+1 2 3 4 5 6 7 7 8 9 9 10 11 12 
+thief: stealing value: 12
+thief: steps left: 32, steps passed: 3
+1 2 3 4 5 6 7 7 8 9 9 10 11 
+owner: added value: 1, steps left: 33, steps passed: 2
+								Seconds since start: 2
+thief: stealing value: 11
+thief: steps left: 31, steps passed: 4
+1 1 2 3 4 5 6 7 7 8 9 9 10 
+thief: stealing value: 10
+thief: steps left: 30, steps passed: 5
+1 1 2 3 4 5 6 7 7 8 9 9 
+owner: added value: 3, steps left: 32, steps passed: 3
+								Seconds since start: 3
+thief: stealing value: 9
+thief: steps left: 29, steps passed: 6
+1 1 2 3 3 4 5 6 7 7 8 9 
+thief: stealing value: 9
+thief: steps left: 28, steps passed: 7
+1 1 2 3 3 4 5 6 7 7 8 
+owner: added value: 3, steps left: 31, steps passed: 4
+								Seconds since start: 4
+thief: stealing value: 8
+thief: steps left: 27, steps passed: 8
+1 1 2 3 3 3 4 5 6 7 7 
+thief: stealing value: 7
+thief: steps left: 26, steps passed: 9
+1 1 2 3 3 3 4 5 6 7 
+owner: added value: 9, steps left: 30, steps passed: 5
+								Seconds since start: 5
+thief: stealing value: 9
+thief: steps left: 25, steps passed: 10
+1 1 2 3 3 3 4 5 6 7 
+thief: stealing value: 7
+thief: steps left: 24, steps passed: 11
+1 1 2 3 3 3 4 5 6 
+owner: added value: 5, steps left: 29, steps passed: 6
+								Seconds since start: 6
+thief: stealing value: 6
+thief: steps left: 23, steps passed: 12
+1 1 2 3 3 3 4 5 5 
+thief: stealing value: 5
+thief: steps left: 22, steps passed: 13
+1 1 2 3 3 3 4 5 
+owner: added value: 1, steps left: 28, steps passed: 7
+								Seconds since start: 7
+thief: stealing value: 5
+thief: steps left: 21, steps passed: 14
+1 1 1 2 3 3 3 4 
+thief: stealing value: 4
+thief: steps left: 20, steps passed: 15
+1 1 1 2 3 3 3 
+owner: added value: 3, steps left: 27, steps passed: 8
+								Seconds since start: 8
+thief: stealing value: 3
+thief: steps left: 19, steps passed: 16
+1 1 1 2 3 3 3 
+thief: stealing value: 3
+thief: steps left: 18, steps passed: 17
+1 1 1 2 3 3 
+owner: added value: 5, steps left: 26, steps passed: 9
+								Seconds since start: 9
+thief: stealing value: 5
+thief: steps left: 17, steps passed: 18
+1 1 1 2 3 3 
+thief: stealing value: 3
+thief: steps left: 16, steps passed: 19
+1 1 1 2 3 
+owner: added value: 7, steps left: 25, steps passed: 10
+								Seconds since start: 10
+thief: stealing value: 7
+thief: steps left: 15, steps passed: 20
+1 1 1 2 3 
+thief: stealing value: 3
+thief: steps left: 14, steps passed: 21
+1 1 1 2 
+owner: added value: 9, steps left: 24, steps passed: 11
+								Seconds since start: 11
+thief: stealing value: 9
+thief: steps left: 13, steps passed: 22
+1 1 1 2 
+thief: stealing value: 2
+thief: steps left: 12, steps passed: 23
+1 1 1 
+owner: added value: 3, steps left: 23, steps passed: 12
+								Seconds since start: 12
+thief: stealing value: 3
+thief: steps left: 11, steps passed: 24
+1 1 1 
+thief: stealing value: 1
+thief: steps left: 10, steps passed: 25
+1 1 
+owner: added value: 1, steps left: 22, steps passed: 13
+								Seconds since start: 13
+thief: stealing value: 1
+thief: steps left: 9, steps passed: 26
+1 1 
+thief: stealing value: 1
+thief: steps left: 8, steps passed: 27
+1 
+owner: added value: 7, steps left: 21, steps passed: 14
+								Seconds since start: 14
+thief: stealing value: 7
+thief: steps left: 7, steps passed: 28
+1 
+thief: stealing value: 1
+thief: steps left: 6, steps passed: 29
+vector is empty
+owner: added value: 9, steps left: 20, steps passed: 15
+								Seconds since start: 15
+thief: stealing value: 9
+thief: steps left: 5, steps passed: 30
+vector is empty
+thief: steps left: 4, steps passed: 31
+vector is empty
+owner: added value: 9, steps left: 19, steps passed: 16
+								Seconds since start: 16
+thief: stealing value: 9
+thief: steps left: 3, steps passed: 32
+vector is empty
+thief: steps left: 2, steps passed: 33
+vector is empty
+owner: added value: 3, steps left: 18, steps passed: 17
+								Seconds since start: 17
+thief: stealing value: 3
+thief: steps left: 1, steps passed: 34
+vector is empty
+thief: steps left: 0, steps passed: 35
+vector is empty
+thief ended.
+owner: added value: 3, steps left: 17, steps passed: 18
+								Seconds since start: 18
+owner: added value: 5, steps left: 16, steps passed: 19
+								Seconds since start: 19
+Main thread awaken.
+ownerThread is not joinable after detach().
+thiefThread is not joinable after detach().
+Finally, items in shared home:
+3 5 
+Оценка к-ва потоков которые могут выполняться действительно одновременно: 4
+ Precalculated check. 
+simple:
+2 true
+3 true
+5 true
+7 true
+11 true
+13 true
+17 true
+19 true
+23 true
+29 true
+31 true
+37 true
+41 true
+43 true
+47 true
+53 true
+59 true
+61 true
+67 true
+71 true
+73 true
+79 true
+83 true
+89 true
+97 true
+non-simple:
+0 false
+4 false
+6 false
+8 false
+9 false
+10 false
+12 false
+14 false
+15 false
+96 false
+95 false
+90 false
+ number | value
+
+      1 | 1
+counting simple number (1).counting simple number (2).
+      2 | 2
+counting simple number (1).counting simple number (2).counting simple number (3).
+      3 | 3
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).
+      4 | 5
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).
+      5 | 7
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).
+      6 | 11
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).
+      7 | 13
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).
+      8 | 17
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).
+      9 | 19
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).
+      10 | 23
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).counting simple number (29).
+      11 | 29
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).counting simple number (29).counting simple number (31).
+      12 | 31
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).counting simple number (29).counting simple number (31).counting simple number (37).
+      13 | 37
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).counting simple number (29).counting simple number (31).counting simple number (37).counting simple number (41).
+      14 | 41
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).counting simple number (29).counting simple number (31).counting simple number (37).counting simple number (41).counting simple number (43).
+      15 | 43
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).counting simple number (29).counting simple number (31).counting simple number (37).counting simple number (41).counting simple number (43).counting simple number (47).
+      16 | 47
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).counting simple number (29).counting simple number (31).counting simple number (37).counting simple number (41).counting simple number (43).counting simple number (47).counting simple number (53).
+      17 | 53
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).counting simple number (29).counting simple number (31).counting simple number (37).counting simple number (41).counting simple number (43).counting simple number (47).counting simple number (53).counting simple number (59).
+      18 | 59
+counting simple number (1).counting simple number (2).counting simple number (3).counting simple number (5).counting simple number (7).counting simple number (11).counting simple number (13).counting simple number (17).counting simple number (19).counting simple number (23).counting simple number (29).counting simple number (31).counting simple number (37).counting simple number (41).counting simple number (43).counting simple number (47).counting simple number (53).counting simple number (59).counting simple number (61).
+      19 | 61
+----> 09:04:14 Fri Dec 10 olli@dell15 ~/CLionProjects/trickyCPP/homework6
+$ 
+
