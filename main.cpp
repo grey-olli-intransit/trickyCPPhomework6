@@ -162,44 +162,61 @@ void thiefRemoveHighestValuePerHalfSecond(std::vector<int> & store) {
  * Необходимо, чтобы несколько потоков могли обращаться к pcout и информация выводилась в консоль.
  * Продемонстрируйте работу pcout.
  **/
-/*
- * Эту первую задачу я сделать не успел, сдаю домашку без неё. То что закоментировано
- * не работает. Сделаю позже.
- *
-template<typename T>
-class pcout : public std::ostream {
+class Pcout  {
     static std::mutex mutexForCOUT;
-    std::ostream out;
 public:
-        friend std::ostream & operator<<(std::ostream & ostr, const T & toPrint){
-        std::lock_guard lockGuard(mutexForCOUT);
-        ostr << toPrint;
-        return ostr;
+
+    template<class T>
+    Pcout& operator<<( const T & toPrint) {
+        // error: use of class template 'std::lock_guard' requires template arguments
+        std::lock_guard <std::mutex> lockGuard(Pcout::mutexForCOUT); // добавлено <std::mutex>
+        std::cout << toPrint;
+        return *this;
     }
+
+    // эти, согласно stackoverflow - для std::endl и т.п.
+    friend Pcout& operator<<(Pcout &s, std::ostream& (*f)(std::ostream &));
+    friend Pcout& operator<<(Pcout &s, std::ostream& (*f)(std::ios &));
+    friend Pcout& operator<<(Pcout &s, std::ostream& (*f)(std::ios_base &));
 };
 
-void print_str1(std::ostream & out) {
-    std::chrono::seconds s{abs(std::rand()*10+1) % 10};
-    std::this_thread::sleep_for(s);
-    out << "print_str1";
+Pcout& operator<<(Pcout &s, std::ostream& (*f)(std::ostream &)) {
+    f(std::cout);
+    return s;
 }
 
-void print_str2(std::ostream & out) {
-    std::chrono::seconds s{abs(std::rand()*10+1) % 10};
-    out << "print_str2";
+Pcout& operator<<(Pcout &s, std::ostream& (*f)(std::ios &)) {
+    f(std::cout);
+    return s;
 }
-*/
+
+Pcout& operator<< (Pcout &s, std::ostream& (*f)(std::ios_base &)) {
+    f(std::cout);
+    return s;
+}
+
+
+std::mutex Pcout::mutexForCOUT{};
+
+void print_str1(Pcout & out) {
+    std::chrono::seconds s{abs(std::rand()*10) % 10};
+    std::this_thread::sleep_for(s);
+    out << "print_str1\n";
+}
+
+void print_str2(Pcout & out1) {
+    std::chrono::seconds s{abs(std::rand()*10) % 10};
+    std::this_thread::sleep_for(s);
+    out1 << "print_str2" << std::endl;
+}
 
 int main() {
 
-    /*
-    pcout<std::string> p;
-    std::thread OneThread([&p](){print_str1(p);});
-    std::thread OtherThread([&p](){print_str2(p);});
+    Pcout pcout;
+    std::thread OneThread([&pcout](){print_str1(pcout);});
+    std::thread OtherThread([&pcout](){print_str2(pcout);});
     OneThread.join();
     OtherThread.join();
-    return 0;
-    */
 
     std::vector<int> sharedHome{1,2,4,5,3,6,7,8,9,9,10,11,12,13,14};
     std::cout << "Initially items in shared home:" << std::endl;
